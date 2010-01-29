@@ -69,7 +69,7 @@ module AASM
         #
         # OR:
         #
-        #   class Foo < ActiveRecord::Base
+        #   class Foo
         #     include Mongoid::Document
         #     include AASM
         #     field :status
