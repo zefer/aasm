@@ -11,7 +11,7 @@ module AASM::Persistence
       base.send(:include, AASM::Persistence::ActiveRecordPersistence)
     elsif hierarchy.include?("Mongoid::Document")
       require File.join(File.dirname(__FILE__), 'persistence', 'mongoid_persistence')
-      base.send(:include AASM::Persistence::MongoidPersistence)
+      base.send(:include, AASM::Persistence::MongoidPersistence)
     end
   end
 end
